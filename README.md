@@ -1,0 +1,1 @@
+A collection of all my projects done in p5, otherwise known as 'processing'. Each file has its own description of what it does.
