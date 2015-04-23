@@ -9,18 +9,21 @@ public class Drop {
   }
   
   void update() {
+    // Reset start values of a drop when it goes below the screen
      if(y>625) {
        y = (int) Math.ceil(Math.random()*-1200);
        x = (int) Math.ceil(Math.random()*400);
        v = 0;
      }
     
+    // Update velocity of drop with the constant of gravity
      v += g;
+     
+     // Increase y value wth new velocity
      y += v;
   }
   
   void draw() {
-   for(int i=0; i<10; i++)
      rainDrop(); 
   }
   
